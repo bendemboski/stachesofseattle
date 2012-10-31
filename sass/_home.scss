@@ -1,0 +1,54 @@
+.ui-home-content {
+  padding: 0 100px;
+}
+
+.ui-home-banner-image {
+  margin: 20px 0;
+}
+
+.ui-home-section {
+  position: relative;
+  padding-left: image-width('icon_calendar.png') + 80px;
+  min-height: image-height('icon_calendar.png');
+  margin-top: 80px;
+
+  &:first-child {
+    margin-top: 50px;
+  }
+}
+
+.ui-home-section-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ui-buy-button-container {
+  position: relative;
+  padding-left: image-width('buy_button.png') + 5px;
+  min-height: image-height('buy_button.png');
+  margin-top: 10px;
+  height: 2em * $line-height-factor;
+}
+
+.ui-buy-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ui-calendar-pic-preview {
+  margin-top: 80px;
+}
+
+.ui-calendar-pic {
+  float: left;
+  display: inline-block;
+  line-height: 0;
+  margin-top: 8px;
+  margin-left: 8px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
