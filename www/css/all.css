@@ -3,7 +3,7 @@
 }
 
 .ui-font-medium {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .ui-font-large {
@@ -11,7 +11,7 @@
 }
 
 .ui-font-xlarge {
-  font-size: 55px;
+  font-size: 48px;
 }
 
 .ui-hidden {
@@ -23,8 +23,12 @@
 }
 
 .ui-clearfix {
-  overflow: hidden;
   *zoom: 1;
+}
+.ui-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .popover p {
@@ -43,36 +47,136 @@
   clear: both;
 }
 
-.ui-home-content {
-  padding: 0 100px;
+p {
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
-.ui-home-banner-image {
-  margin: 20px 0;
+html {
+  background: black;
+}
+
+body {
+  margin: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+a, a:hover, a:active, a:focus, a:visited {
+  outline: 0;
+  color: #f15722;
+}
+
+.ui-content-frame {
+  background: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ui-home-content {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.ui-home-header {
+  width: 460px;
+  padding-left: 480px;
+  padding-right: 20px;
+  height: 421px;
+  background: url('../img/header_bg.jpg?2cfe2cb1c7b178805b26a230a8ec8e0d');
+}
+
+.ui-home-header-social-icons {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.ui-home-tabs {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ui-home-tab-container {
+  position: relative;
+  width: 120px;
+  display: inline-block;
+  float: left;
+  margin-left: 70px;
+}
+.ui-home-tab-container:first-child {
+  margin-left: 0;
+}
+
+.ui-home-tab-text {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+  white-space: nowrap;
+  line-height: 40px;
+  text-align: center;
+}
+
+.ui-home-banner-container {
+  position: relative;
+}
+
+.ui-home-banner-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -16.65px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
 }
 
 .ui-home-section {
   position: relative;
-  padding-left: 320px;
-  min-height: 240px;
-  margin-top: 80px;
-}
-.ui-home-section:first-child {
-  margin-top: 50px;
+  padding-left: 200px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 120px;
 }
 
 .ui-home-section-icon {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 40px;
+}
+
+.ui-buy-link {
+  display: inline-block;
 }
 
 .ui-buy-button-container {
   position: relative;
   padding-left: 97px;
-  min-height: 26px;
+  line-height: 26px;
   margin-top: 10px;
-  height: 2.6em;
 }
 
 .ui-buy-button {
@@ -81,8 +185,22 @@
   top: 0;
 }
 
-.ui-calendar-pic-preview {
-  margin-top: 80px;
+#about h3 {
+  margin-top: 14px;
+}
+#about p {
+  margin-top: 0;
+}
+
+.ui-gap-text {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 2em;
+}
+
+.ui-calendar-pic-row {
+  display: inline-block;
 }
 
 .ui-calendar-pic {
@@ -94,40 +212,4 @@
 }
 .ui-calendar-pic:first-child {
   margin-left: 0;
-}
-
-html {
-  background: black;
-}
-
-body {
-  margin: 0;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 18px;
-  line-height: 1.3;
-  overflow-y: scroll;
-}
-
-h1 {
-  font-size: 55px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-  margin: 0;
-}
-
-a:focus {
-  outline: 0;
-}
-
-.ui-content-frame {
-  background: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }

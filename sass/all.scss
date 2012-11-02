@@ -1,42 +1,8 @@
 @import "compass";
+@import "colors";
 @import "fonts";
 @import "helpers";
 @import "bootstrap";
 @import "grid";
+@import "layout";
 @import "home";
-
-html {
-  background: black;
-}
-
-body {
-  margin: 0;
-  @include font-family-default;
-  font-size: $font-size-default;
-  line-height: $line-height-factor;
-  overflow-y: scroll;
-}
-
-h1 {
-  font-size: $font-size-xlarge;
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
-}
-
-h2 {
-  font-size: $font-size-large;
-  font-weight: normal;
-  text-align: center;
-  margin: 0;
-}
-
-a:focus {
-  outline: 0;
-}
-
-.ui-content-frame {
-  background: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
