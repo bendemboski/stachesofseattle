@@ -58,16 +58,35 @@ $home-section-vmargin: $home-hpadding;
 }
 
 .ui-home-banner-text {
-  $font-size: $font-size-medium;
-
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
-  margin-top: -$font-size - $line-height-factor / 2;
   text-align: center;
   color: white;
-  font-size: $font-size;
+}
+
+.ui-sponsor-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ui-gatherball-logo {
+  display: inline-block;
+  text-align: right;
+}
+
+.ui-gatherball-link {
+  &, &:hover {
+    text-decoration: none;
+  }
+}
+
+.ui-gatherball-logo-text {
+  position: relative;
+  top: -15px;
+  font-size: 13px;
+  color: #93c949;
 }
 
 .ui-home-section {
@@ -116,6 +135,11 @@ $home-section-vmargin: $home-hpadding;
   text-align: center;
   font-size: $font-size-medium;
   line-height: 2em;
+}
+
+.ui-calendar {
+  line-height: 0;
+  text-align: center;
 }
 
 .ui-calendar-pic-row {

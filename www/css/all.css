@@ -103,7 +103,7 @@ a, a:hover, a:active, a:focus, a:visited {
   padding-left: 480px;
   padding-right: 20px;
   height: 421px;
-  background: url('../img/header_bg.jpg?2cfe2cb1c7b178805b26a230a8ec8e0d');
+  background: url('../img/header_bg.jpg?2007e7158373e40d093380f6214bed23');
 }
 
 .ui-home-header-social-icons {
@@ -147,10 +147,29 @@ a, a:hover, a:active, a:focus, a:visited {
   left: 0;
   right: 0;
   top: 50%;
-  margin-top: -16.65px;
   text-align: center;
   color: white;
-  font-size: 16px;
+}
+
+.ui-sponsor-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ui-gatherball-logo {
+  display: inline-block;
+  text-align: right;
+}
+
+.ui-gatherball-link, .ui-gatherball-link:hover {
+  text-decoration: none;
+}
+
+.ui-gatherball-logo-text {
+  position: relative;
+  top: -15px;
+  font-size: 13px;
+  color: #93c949;
 }
 
 .ui-home-section {
@@ -197,6 +216,11 @@ a, a:hover, a:active, a:focus, a:visited {
   text-align: center;
   font-size: 16px;
   line-height: 2em;
+}
+
+.ui-calendar {
+  line-height: 0;
+  text-align: center;
 }
 
 .ui-calendar-pic-row {

@@ -7,6 +7,12 @@ $(function() {
             scrollTop: $(id).offset().top
         }, 500);
     });
+
+    $(".js-scroll-top").click(function(e) {
+        $('html,body').animate({
+            scrollTop: 0
+        });
+    });
 });
 
 // Buy link
