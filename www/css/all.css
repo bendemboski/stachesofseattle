@@ -87,6 +87,10 @@ a, a:hover, a:active, a:focus, a:visited {
   color: #f15722;
 }
 
+img {
+  border: none;
+}
+
 .ui-content-frame {
   background: white;
   padding-top: 40px;
