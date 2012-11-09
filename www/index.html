@@ -21,7 +21,12 @@
     <div class="ui-container">
       <div class="ui-content-frame">
         <div class="ui-home-header ui-font-medium">
-          <h1>'Staches of Seattle</h1>
+          <img class="ui-home-header-heading" width="480" height="49" src="img/heading_header.png"
+               alt="'STACHES OF SEATTLE"/>
+          <a href="#support" class="ui-home-header-speech-bubble js-page-nav">
+            ORDER YOUR<br/>
+            CALENDAR NOW
+          </a>
           <p>
             We have a 5 foot mustache, Movember is upon us, the new year is coming,
             and Seattle is awesome.
@@ -43,33 +48,23 @@
         <div class="ui-home-tabs ui-home-content ui-clearfix">
           <div class="ui-home-tab-container">
             <div class="ui-home-tab-text">ABOUT THE CALENDAR</div>
-            <a href="#calendar" class="js-page-nav">
-              <img width="120" height="120" src="img/icon_calendar.png"/>
-            </a>
+            <a href="#calendar" class="ui-home-tab-calendar js-page-nav"></a>
           </div>
           <div class="ui-home-tab-container">
-            <div class="ui-home-tab-text">SUPPORT THE CAUSE</div>
-            <a href="#support" class="js-page-nav">
-              <img width="120" height="120" src="img/icon_money.png"/>
-            </a>
+            <div class="ui-home-tab-text">BUY NOW</div>
+            <a href="#support" class="ui-home-tab-support js-page-nav"></a>
           </div>
           <div class="ui-home-tab-container">
             <div class="ui-home-tab-text">LEARN ABOUT MOVEMBER</div>
-            <a href="http://us.movember.com/about/" target="_blank">
-              <img width="120" height="120" src="img/icon_learn.png"/>
-            </a>
+            <a href="http://us.movember.com/about/" target="_blank" class="ui-home-tab-learn"></a>
           </div>
           <div class="ui-home-tab-container">
             <div class="ui-home-tab-text">FAQs</div>
-            <a href="#info" class="js-page-nav">
-              <img width="120" height="120" src="img/icon_info.png"/>
-            </a>
+            <a href="#info" class="ui-home-tab-info js-page-nav"></a>
           </div>
           <div class="ui-home-tab-container">
             <div class="ui-home-tab-text">ABOUT US</div>
-            <a href="#about" class="js-page-nav">
-              <img width="120" height="120" src="img/icon_about.png"/>
-            </a>
+            <a href="#about" class="ui-home-tab-about js-page-nav"></a>
           </div>
         </div>
 
@@ -91,7 +86,8 @@
         <div class="ui-home-content">
           <div id="calendar" class="ui-home-section">
             <img class="ui-home-section-icon" width="120" height="120" src="img/icon_calendar.png"/>
-            <h2>ABOUT THE CALENDAR</h2>
+            <img width="367" height="43" src="img/heading_calendar.png" class="ui-home-heading"
+                 alt="ABOUT THE CALENDAR"/>
             <p>
               We'll take 12 photos of our giant mustache on various Seattle landmarks throughout
               November and compile them into a 2013 wall calendar. We'll have the calendar
@@ -114,8 +110,9 @@
 
           <div id="support" class="ui-home-section">
             <img class="ui-home-section-icon" width="120" height="120" src="img/icon_money.png"/>
-            <h2>SUPPORT THE CAUSE</h2>
-            <form class="ui-buy-link" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <img width="520" height="43" src="img/heading_support.png" class="ui-home-heading"
+                 alt="SUPPORT THE CAUSE - BUY NOW!"/>
+            <form class="ui-buy-link" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
               <p>
                 <a href="http://us.movember.com/" target="_blank">Movember</a> is a fundraiser
                 where men grow mustaches throughout the month of November to raise awareness and
@@ -130,7 +127,7 @@
               </p>
             </form>
             <div class="ui-buy-button-container">
-              <form class="ui-buy-button" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <form class="ui-buy-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="UPF5VYW848S92">
                 <input type="image" src="/img/buy_button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -139,7 +136,7 @@
               calendar(s) and have them shipped to you ($15 + $5 shipping)
             </div>
             <div class="ui-buy-button-container">
-              <form class="ui-buy-button" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <form class="ui-buy-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="FGLJASVK7QABW">
                 <input type="image" src="/img/buy_button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -148,7 +145,7 @@
               calendar(s) and pick them up yourself ($15, no shipping)
             </div>
             <div class="ui-buy-button-container">
-              <form class="ui-buy-button" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <form class="ui-buy-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="DP3GNMXALDCN2">
                 <input type="image" src="/img/donate_button.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -156,15 +153,22 @@
               </form>
               to the cause because you're generous and awesome like that
             </div>
+            <p></p>
             <p><a href="#" class="js-scroll-top">back to top</a></p>
           </div>
 
           <div id="info" class="ui-home-section">
             <img class="ui-home-section-icon" width="120" height="120" src="img/icon_info.png"/>
-            <h2>FAQs</h2>
+            <img width="96" height="43" src="img/heading_info.png"
+                 alt="FAQs" class="ui-home-heading"/>
             <p>
-              Q: Are the calendars going to be all shoddy and fall apart before 2013 is over?<br/>
-              A: No, they will be high quality calendars from a professional printer.
+              Q: When I can order my calendars?<br/>
+              A: Right now! We'll be taking orders through the end of the month, so
+                 <a href="#support" class="js-page-nav">order now</a> so you don't forget!
+            </p>
+            <p>
+              Q: How many calendars can I order?<br/>
+              A: As many as you like!
             </p>
             <p>
               Q: When exactly will I get my calendar?<br/>
@@ -174,8 +178,8 @@
                  or be picked up.
             </p>
             <p>
-              Q: How many calendars can I order?<br/>
-              A: As many as you like!
+              Q: Are the calendars going to be all shoddy and fall apart before 2013 is over?<br/>
+              A: No, they will be high quality calendars from a professional printer.
             </p>
             <p>
               Q: Who benefits from this fundraiser?<br/>
@@ -187,19 +191,45 @@
 
           <div id="about" class="ui-home-section">
             <img class="ui-home-section-icon" width="120" height="120" src="img/icon_about.png"/>
-            <h2>ABOUT US</h2>
-            <h3>Ben Demboski...The Mustache Maker</h3>
-            <p>
-              Bio coming soon...
-            </p>
-            <h3>Amanda Reed...The Visionary</h3>
-            <p>
-              Bio coming soon...
-            </p>
-            <h3>Danielle Isbell...The Photographer</h3>
-            <p>
-              Bio coming soon...
-            </p>
+            <img width="167" height="43" src="img/heading_about.png"
+                 alt="ABOUT US" class="ui-home-heading"/>
+            <div>
+              <img class="ui-headshot" width="75" height="75" src="img/headshot_ben.jpg"/>
+              <h2 class="ui-about-us-first">Ben Demboski...The Mustache Maker</h2>
+              <p>
+                Ben decided that he wanted a giant mustache for his halloween costume this year, but
+                after several weeks of not shaving realized that he'd better build an artificial one.
+                So he found some fantastic shag fabric, collected the rest of the materials and
+                constructed his now-beloved mustache. When not setting up 'stache shots, building
+                'stache web sites, or grooming his own 'stache, Ben works as a software engineer
+                and co-founder of <a href="https://gatherball.com" target="_blank">Gatherball</a>,
+                plays as much Ultimate Frisbee as his body will tolerate, and enjoys mountain
+                biking, skiing, hiking and board and card games on the side.
+              </p>
+              <p class="ui-about-social-links">
+                <a href="http://www.facebook.com/bendemboski" target="_blank"><img width="32" height="32" src="img/social_icon_facebook.png"/></a>
+                <a href="http://www.twitter.com/bendemboski" target="_blank"><img width="32" height="32" src="img/social_icon_twitter.png"/></a>
+                <a href="http://www.linkedin.com/in/bendemboski" target="_blank"><img width="32" height="32" src="img/social_icon_linkedin.png"/></a>
+              </p>
+            </div>
+            <div>
+              <img class="ui-headshot" width="75" height="75" src="img/headshot_amanda.jpg"/>
+              <h2>Amanda Reed...The Visionary</h2>
+              <p>
+                Bio coming soon...<br/><br/><br/>
+              </p>
+              <p class="ui-about-social-links">
+                <a href="https://twitter.com/areedie" target="_blank"><img width="32" height="32" src="img/social_icon_twitter.png"/></a>
+                <a href="http://www.linkedin.com/pub/amanda-reed/1b/464/2a2" target="_blank"><img width="32" height="32" src="img/social_icon_linkedin.png"/></a>
+              </p>
+            </div>
+            <div>
+              <img class="ui-headshot" width="75" height="75" src="img/headshot_danielle.jpg"/>
+              <h2>Danielle Isbell...The Photographer</h2>
+              <p>
+                Bio coming soon...<br/><br/><br/>
+              </p>
+            </div>
             <p><a href="#" class="js-scroll-top">back to top</a></p>
           </div>
         </div>
@@ -211,56 +241,57 @@
 
       <div id="preview" class="ui-content-frame">
         <div class="ui-calendar">
-            <div>
-              <div class="ui-calendar-pic-row ui-clearfix">
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
+          <div>
+            <div class="ui-calendar-pic-row ui-clearfix">
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
               </div>
             </div>
-            <div>
-              <div class="ui-calendar-pic-row ui-clearfix">
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
-                <div class="ui-calendar-pic">
-                  <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-                </div>
+          </div>
+          <div>
+            <div class="ui-calendar-pic-row ui-clearfix">
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
+              </div>
+              <div class="ui-calendar-pic">
+                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='/js/libs/jquery-1.7.1.js'>\x3C/script>")</script>
+    <script src="js/libs/modernizr.custom.js?q=2012102501"></script>
     <script src="js/libs/bootstrap.min.js?q=2012103001"></script>
 
     <script src="js/all.js?q=2012110101"></script>

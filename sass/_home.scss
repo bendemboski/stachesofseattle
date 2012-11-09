@@ -1,6 +1,6 @@
 $home-hpadding: 40px;
-$home-tab-width: image-width('icon_calendar.png');
-$home-tab-margin: floor(($blueprint-container-size - 5 * image-width('icon_calendar.png') - 2 * $home-hpadding) / 4);
+$home-tab-size: image-width('icon_calendar.png');
+$home-tab-margin: floor(($blueprint-container-size - 5 * $home-tab-size - 2 * $home-hpadding) / 4);
 $home-content-margin: 2 * $home-hpadding;
 $home-section-vmargin: $home-hpadding;
 
@@ -13,11 +13,38 @@ $home-section-vmargin: $home-hpadding;
   $width: image-width('header_bg.jpg');
   $right-pad: 20px;
 
+  position: relative;
   width: $width / 2 - $right-pad;
   padding-left: $width / 2;
   padding-right: $right-pad;
   height: image-height('header_bg.jpg');
   background: image-url('header_bg.jpg');
+}
+
+.ui-home-header-speech-bubble {
+  $top-pad: 40px;
+  $right-pad: 5px;
+
+  position: absolute;
+  left: 150px;
+  top: -30px;
+  width: image-width('speechbubble.png') - $right-pad;
+  height: image-height('speechbubble.png') - $top-pad;
+  padding: $top-pad $right-pad 0 0;
+  background: image-url('speechbubble.png');
+  z-index: 1;
+  text-align: center;
+  font-size: $font-size-large;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.ui-home-header-heading {
+  margin-left: -15px;
+  margin-bottom: 10px;
 }
 
 .ui-home-header-social-icons {
@@ -32,7 +59,7 @@ $home-section-vmargin: $home-hpadding;
 
 .ui-home-tab-container {
   position: relative;
-  width: $home-tab-width;
+  width: $home-tab-size;
   display: inline-block;
   float: left;
   margin-left: $home-tab-margin;
@@ -51,6 +78,38 @@ $home-section-vmargin: $home-hpadding;
   white-space: nowrap;
   line-height: $home-hpadding;
   text-align: center;
+}
+
+@mixin home-tab($image-name) {
+  display: block;
+  width: $home-tab-size;
+  height: $home-tab-size;
+  line-height: 0;
+  background: image-url('icon_' + $image-name + '.png');
+
+  &:hover {
+    background: image-url('icon_' + $image-name + '_hover.png');
+  }
+}
+
+.ui-home-tab-calendar {
+  @include home-tab('calendar');
+}
+
+.ui-home-tab-support {
+  @include home-tab('money');
+}
+
+.ui-home-tab-learn {
+  @include home-tab('learn');
+}
+
+.ui-home-tab-info {
+  @include home-tab('info');
+}
+
+.ui-home-tab-about {
+  @include home-tab('about');
 }
 
 .ui-home-banner-container {
@@ -104,6 +163,10 @@ $home-section-vmargin: $home-hpadding;
   top: $home-section-vmargin;
 }
 
+.ui-home-heading {
+  margin-top: -8px;
+}
+
 .ui-buy-link {
   display: inline-block;
 }
@@ -125,9 +188,19 @@ $home-section-vmargin: $home-hpadding;
   h3 {
     margin-top: $paragraph-margins;
   }
-  p {
+  .ui-about-us-first {
     margin-top: 0;
   }
+}
+
+.ui-headshot {
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.ui-about-social-links {
+  text-align: right;
 }
 
 .ui-gap-text {
