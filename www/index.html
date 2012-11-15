@@ -71,10 +71,7 @@
           </div>
         </div>
 
-        <div class="ui-home-banner-container">
-          <h2 class="ui-home-banner-text">A boy, his wife, their friend, a giant mustache, and the city they love</h2>
-          <img width="960" height="458" src="img/ben_mustache.jpg"/>
-        </div>
+        <img width="960" height="458" src="img/collage.jpg"/>
 
         <div class="ui-sponsor-box">
           <h3>Sponsored by</h3>
@@ -221,7 +218,14 @@
               <img class="ui-headshot" width="75" height="75" src="img/headshot_amanda.jpg"/>
               <h2>Amanda Reed...The Visionary</h2>
               <p>
-                Bio coming soon...<br/><br/><br/>
+                Amanda has always been a fan of Ben's mustache, and was very excited when her
+                home became a two-mustache household -- one of them five feet across. So
+                excited, in fact, that she hatched an idea to share the new mustache with the
+                world -- well, with Seattle at least -- in calendar form! When she's not
+                helping out with mustache pictures, designing mustache web sites or reminding
+                Ben to trim his own mustache, Amanda works on architecture and urban planning at
+                <a href="http://gglo.com/">GGLO</a>, tries to stay abreast of all things design,
+                and makes sure that no piece of entertainment news or celebrity gossip goes un-read!
               </p>
               <p class="ui-about-social-links">
                 <a href="https://twitter.com/areedie" target="_blank"><img width="32" height="32" src="img/social_icon_twitter.png"/></a>
@@ -258,29 +262,35 @@
       <div id="preview" class="ui-content-frame">
         <div class="ui-calendar">
           <div>
-            <div class="ui-calendar-pic-row ui-clearfix">
-              <div class="ui-calendar-pic">
-                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-              </div>
-              <div class="ui-calendar-pic">
-                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-              </div>
-              <div class="ui-calendar-pic">
-                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-              </div>
-              <div class="ui-calendar-pic">
-                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-              </div>
-              <div class="ui-calendar-pic">
-                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-              </div>
-              <div class="ui-calendar-pic">
-                <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
-              </div>
+            <div class="ui-calendar-pic-row ui-clearfix js-calendar-top-row">
+              <a href="img/calendar/skyline.jpg" target="_blank" class="ui-calendar-pic js-calendar-pic-set"
+                 data-width="640" data-height="427">
+                <img width="60" height="60" src="img/calendar/skyline_thumb.jpg"/>
+              </a>
+              <a href="img/calendar/troll.jpg" target="_blank" class="ui-calendar-pic js-calendar-pic-set"
+                 data-width="640" data-height="427">
+                <img width="60" height="60" src="img/calendar/troll_thumb.jpg"/>
+              </a>
+              <a href="img/calendar/jp_patches.jpg" target="_blank" class="ui-calendar-pic js-calendar-pic-set"
+                 data-width="640" data-height="427">
+                <img width="60" height="60" src="img/calendar/jp_patches_thumb.jpg"/>
+              </a>
+              <a href="img/calendar/safeco.jpg" target="_blank" class="ui-calendar-pic js-calendar-pic-set"
+                 data-width="640" data-height="427">
+                <img width="60" height="60" src="img/calendar/safeco.jpg"/>
+              </a>
+              <a href="img/calendar/jimi.jpg" target="_blank" class="ui-calendar-pic js-calendar-pic-set"
+                 data-width="427" data-height="640">
+                <img width="60" height="60" src="img/calendar/jimi_thumb.jpg"/>
+              </a>
+              <a href="img/calendar/pig.jpg" target="_blank" class="ui-calendar-pic js-calendar-pic-set"
+                 data-width="640" data-height="495">
+                <img width="60" height="60" src="img/calendar/pig.jpg"/>
+              </a>
             </div>
           </div>
           <div>
-            <div class="ui-calendar-pic-row ui-clearfix">
+            <div class="ui-calendar-pic-row ui-clearfix js-calendar-bottom-row">
               <div class="ui-calendar-pic">
                 <img width="60" height="60" src="img/calendar_pic_placeholder.png"/>
               </div>
@@ -302,10 +312,44 @@
             </div>
           </div>
         </div>
+        <p></p>
+        <p class="ui-center"><a href="#" class="js-scroll-top">back to top</a></p>
+      </div>
+
+      <div class="ui-home-banner-container">
+        <h2 class="ui-home-banner-text">A boy, his wife, their friend, a giant mustache, and the city they love</h2>
+        <img width="960" height="458" src="img/ben_mustache.jpg"/>
       </div>
     </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <div id="welcome-modal" class="modal hide fade">
+      <div class="modal-body ui-center">
+        <div class="clearfix">
+          <a href="#" data-dismiss="modal" class="close">&times;</a>
+        </div>
+        <h3 class="ui-welcome-modal-intro">WELCOME TO</h3>
+        <img class="ui-welcome-modal-heading" width="480" height="49" src="img/heading_header.png" alt="'STACHES OF SEATTLE"/>
+        <h3>A MOVEMBER FUNDRAISER</h3>
+        <div class="ui-welcome-modal-actions-container clearfix">
+          <div class="ui-welcome-modal-action">
+            <span class="ui-welcome-modal-action-label">Like us!</span><br/>
+            <div class="fb-like" data-href="https://www.facebook.com/StachesOfSeattle" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+          </div>
+
+          <div class="ui-welcome-modal-action">
+            <span class="ui-welcome-modal-action-label">Buy a calendar!</span><br/>
+            <a href="#support" class="js-page-nav">
+              <img class="ui-welcome-modal-buy-icon" width="32" height="32" src="img/buy_icon.png"/>
+            </a>
+          </div>
+        </div>
+        <div class="ui-center">
+          <a href="#preview" class="js-page-nav">preview the calendar pics</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='/js/libs/jquery-1.7.1.js'>\x3C/script>")</script>
     <script src="js/libs/modernizr.custom.js?q=2012102501"></script>
     <script src="js/libs/bootstrap.min.js?q=2012103001"></script>
@@ -319,9 +363,17 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
 
-    <script src="js/all.js?q=2012110101"></script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=368607169889088";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script src="js/all.js?q=2012111408"></script>
   </body>
 </html>

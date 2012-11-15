@@ -40,6 +40,11 @@ a {
     outline: 0;
     color: $color-brown;
   }
+
+  &.close {
+    color: black;
+    text-decoration: none;
+  }
 }
 
 img {
@@ -50,4 +55,12 @@ img {
   background: white;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.popover {
+  width: auto;
+}
+
+.popover-title {
+  display: none;
 }

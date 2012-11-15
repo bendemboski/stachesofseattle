@@ -50,6 +50,11 @@ $home-section-vmargin: $home-hpadding;
 .ui-home-header-social-icons {
   margin-top: 10px;
   text-align: right;
+
+
+  a, a:hover {
+    text-decoration: none;
+  }
 }
 
 .ui-home-tabs {

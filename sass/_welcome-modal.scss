@@ -1,0 +1,76 @@
+$modal-background-width: image-width('popup_bg.png');
+$modal-background-height: image-height('popup_bg.png');
+/* Measured in art */
+$modal-background-padding: 20px;
+/* Computed */
+$modal-width: $modal-background-width - 2 * $modal-background-padding;
+$modal-height: $modal-background-height - 2 * $modal-background-padding;
+
+$like-button-height: 22px;
+$buy-icon-height: image-height('buy_icon.png');
+
+#welcome-modal {
+  width: $modal-width;
+  height: $modal-height;
+  padding: $modal-background-padding;
+  margin-top: -$modal-background-height / 2;
+  background: image-url('popup_bg.png') no-repeat center;
+  @include box-shadow(none);
+  border: none;
+
+  .modal-body {
+    padding: 0;
+    overflow: visible;
+  }
+
+  .close {
+    margin-right: 55px;
+    margin-top: 5px;
+    font-size: $font-size-large;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+
+  .fb-like {
+    min-height: $like-button-height;
+    margin-top: floor((max($like-button-height, $buy-icon-height) - $like-button-height) / 2);
+  }
+}
+
+.ui-welcome-modal-intro {
+  margin-top: 15px;
+}
+
+.ui-welcome-modal-heading {
+  margin: 10px 0;
+}
+
+.ui-welcome-modal-actions-container {
+  margin-top: 20px;
+}
+
+.ui-welcome-modal-action {
+  display: inline-block;
+  width: floor($modal-width / 2) - 20px;
+  vertical-align: top;
+  float: right;
+  padding-right: 20px;
+
+  &:first-child {
+    float: left;
+    padding-right: 0;
+    padding-left: 20px;
+  }
+}
+
+.ui-welcome-modal-action-label {
+  font-size: $font-size-large;
+  color: $color-brown;
+  line-height: 45px;
+}
+
+.ui-welcome-modal-buy-icon {
+  margin-top: floor((max($like-button-height, $buy-icon-height) - $buy-icon-height) / 2);
+}
