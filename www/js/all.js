@@ -65,6 +65,14 @@ $(function() {
 
 $(function() {
   $("#welcome-modal").modal('show');
+  var carousel = $("#welcome-modal-carousel");
+
+  // Use the default transition interval, but do the first transition after
+  // 2 seconds
+  carousel.carousel({ pause: false });
+  setTimeout(function() {
+      carousel.carousel('next');
+  }, 2000);
 });
 
 $(function() {

@@ -1,62 +1,95 @@
-$modal-background-width: image-width('popup_bg.png');
-$modal-background-height: image-height('popup_bg.png');
-/* Measured in art */
-$modal-background-padding: 20px;
-/* Computed */
-$modal-width: $modal-background-width - 2 * $modal-background-padding;
-$modal-height: $modal-background-height - 2 * $modal-background-padding;
+$modal-calendar-width: image-width('popup_calendar.jpg');
 
-$like-button-height: 22px;
 $buy-icon-height: image-height('buy_icon.png');
 
 #welcome-modal {
-  width: $modal-width;
-  height: $modal-height;
-  padding: $modal-background-padding;
-  margin-top: -$modal-background-height / 2;
-  background: image-url('popup_bg.png') no-repeat center;
+  width: auto;
+  height: auto;
+  top: 40px;
+  margin-top: 0;
   @include box-shadow(none);
   border: none;
+  background: white;
 
   .modal-body {
-    padding: 0;
     overflow: visible;
+    padding: 0;
+    max-height: none;
   }
 
   .close {
-    margin-right: 55px;
-    margin-top: 5px;
-    font-size: $font-size-large;
+    position: relative;
+    top: 2px;
+    left: -3px;
+    font-size: 25px;
   }
+}
+
+.ui-welcome-modal-carousel {
+  width: 480px;
+  margin: 0 auto 20px auto;
+  background: black;
+  outline: #e0e0e0 solid 1px;
+
+  .carousel-control {
+    display: none;
+  }
+}
+
+.ui-welcome-modal-carousel-image {
+  margin: 0 auto;
+}
+
+.ui-welcome-modal-calendar-frame {
+  border-top: 1px solid #c0c0c0;
+}
+
+.ui-welcome-modal-calendar {
+  position: relative;
+  width: $modal-calendar-width;
+  height: 220px;
+  margin: 10px 20px 20px 20px;
+  text-align: center;
 
   h3 {
     font-weight: bold;
   }
 
-  .fb-like {
-    min-height: $like-button-height;
-    margin-top: floor((max($like-button-height, $buy-icon-height) - $like-button-height) / 2);
+  .ui-fb-like-container {
+    position: relative;
+    display: inline-block;
+    width: 73px;
+    vertical-align: middle;
+    top: 3px;
   }
 }
 
-.ui-welcome-modal-intro {
-  margin-top: 15px;
+.ui-welcome-modal-calendar-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: image-url('popup_calendar.jpg') no-repeat top center;
+  @include opacity(0.4);
+  z-index: -1;
 }
 
-.ui-welcome-modal-heading {
-  margin: 10px 0;
+.ui-welcome-modal-intro {
+  padding-top: 70px;
 }
 
 .ui-welcome-modal-actions-container {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .ui-welcome-modal-action {
   display: inline-block;
-  width: floor($modal-width / 2) - 20px;
+  width: floor($modal-calendar-width / 2) - 20px;
   vertical-align: top;
   float: right;
   padding-right: 20px;
+  line-height: $buy-icon-height;
 
   &:first-child {
     float: left;
@@ -67,10 +100,16 @@ $buy-icon-height: image-height('buy_icon.png');
 
 .ui-welcome-modal-action-label {
   font-size: $font-size-large;
-  color: $color-brown;
-  line-height: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .ui-welcome-modal-buy-icon {
-  margin-top: floor((max($like-button-height, $buy-icon-height) - $buy-icon-height) / 2);
+  vertical-align: middle;
 }
+

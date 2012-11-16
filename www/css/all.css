@@ -349,54 +349,92 @@ img {
   margin-left: 0;
 }
 
-/* Measured in art */
-/* Computed */
 #welcome-modal {
-  width: 517px;
-  height: 288px;
-  padding: 20px;
-  margin-top: -164px;
-  background: url('../img/popup_bg.png?bf44396738aeabfe7c226e40efec517a') no-repeat center;
+  width: auto;
+  height: auto;
+  top: 40px;
+  margin-top: 0;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   border: none;
+  background: white;
 }
 #welcome-modal .modal-body {
-  padding: 0;
   overflow: visible;
+  padding: 0;
+  max-height: none;
 }
 #welcome-modal .close {
-  margin-right: 55px;
-  margin-top: 5px;
-  font-size: 24px;
+  position: relative;
+  top: 2px;
+  left: -3px;
+  font-size: 25px;
 }
-#welcome-modal h3 {
+
+.ui-welcome-modal-carousel {
+  width: 480px;
+  margin: 0 auto 20px auto;
+  background: black;
+  outline: #e0e0e0 solid 1px;
+}
+.ui-welcome-modal-carousel .carousel-control {
+  display: none;
+}
+
+.ui-welcome-modal-carousel-image {
+  margin: 0 auto;
+}
+
+.ui-welcome-modal-calendar-frame {
+  border-top: 1px solid #c0c0c0;
+}
+
+.ui-welcome-modal-calendar {
+  position: relative;
+  width: 480px;
+  height: 220px;
+  margin: 10px 20px 20px 20px;
+  text-align: center;
+}
+.ui-welcome-modal-calendar h3 {
   font-weight: bold;
 }
-#welcome-modal .fb-like {
-  min-height: 22px;
-  margin-top: 5px;
+.ui-welcome-modal-calendar .ui-fb-like-container {
+  position: relative;
+  display: inline-block;
+  width: 73px;
+  vertical-align: middle;
+  top: 3px;
+}
+
+.ui-welcome-modal-calendar-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url('../img/popup_calendar.jpg?8db49f717ad6ec1fa4482dfe87fa8e88') no-repeat top center;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+  z-index: -1;
 }
 
 .ui-welcome-modal-intro {
-  margin-top: 15px;
-}
-
-.ui-welcome-modal-heading {
-  margin: 10px 0;
+  padding-top: 70px;
 }
 
 .ui-welcome-modal-actions-container {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .ui-welcome-modal-action {
   display: inline-block;
-  width: 238px;
+  width: 220px;
   vertical-align: top;
   float: right;
   padding-right: 20px;
+  line-height: 32px;
 }
 .ui-welcome-modal-action:first-child {
   float: left;
@@ -406,10 +444,14 @@ img {
 
 .ui-welcome-modal-action-label {
   font-size: 24px;
-  color: #f15722;
-  line-height: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.ui-welcome-modal-action-label:hover {
+  text-decoration: underline;
 }
 
 .ui-welcome-modal-buy-icon {
-  margin-top: 0px;
+  vertical-align: middle;
 }

@@ -323,28 +323,56 @@
     </div>
 
     <div id="welcome-modal" class="modal hide fade">
-      <div class="modal-body ui-center">
-        <div class="clearfix">
+      <div class="modal-body">
+        <div class="ui-clearfix">
           <a href="#" data-dismiss="modal" class="close">&times;</a>
         </div>
-        <h3 class="ui-welcome-modal-intro">WELCOME TO</h3>
-        <img class="ui-welcome-modal-heading" width="480" height="49" src="img/heading_header.png" alt="'STACHES OF SEATTLE"/>
-        <h3>A MOVEMBER FUNDRAISER</h3>
-        <div class="ui-welcome-modal-actions-container clearfix">
-          <div class="ui-welcome-modal-action">
-            <span class="ui-welcome-modal-action-label">Like us!</span><br/>
-            <div class="fb-like" data-href="https://www.facebook.com/StachesOfSeattle" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+        <div id="welcome-modal-carousel" class="ui-welcome-modal-carousel carousel slide">
+          <div class="carousel-inner">
+            <div class="active item">
+              <img class="ui-welcome-modal-carousel-image" width="480" height="320" src="img/calendar/troll.jpg"/>
+            </div>
+            <div class="item">
+              <img class="ui-welcome-modal-carousel-image" width="213" height="320" src="img/calendar/jimi.jpg"/>
+            </div>
+            <div class="item">
+              <img class="ui-welcome-modal-carousel-image" width="480" height="320" src="img/calendar/skyline.jpg"/>
+            </div>
+            <div class="item">
+              <img class="ui-welcome-modal-carousel-image" width="480" height="320" src="img/calendar/jp_patches.jpg"/>
+            </div>
+            <div class="item">
+              <img class="ui-welcome-modal-carousel-image" width="480" height="320" src="img/calendar/safeco.jpg"/>
+            </div>
+            <div class="item">
+              <img class="ui-welcome-modal-carousel-image" width="414" height="320" src="img/calendar/pig.jpg"/>
+            </div>
           </div>
-
-          <div class="ui-welcome-modal-action">
-            <span class="ui-welcome-modal-action-label">Buy a calendar!</span><br/>
-            <a href="#support" class="js-page-nav">
-              <img class="ui-welcome-modal-buy-icon" width="32" height="32" src="img/buy_icon.png"/>
-            </a>
-          </div>
+          <a class="carousel-control left" href="#welcome-modal-carousel" data-slide="prev">&lsaquo;</a>
+          <a class="carousel-control right" href="#welcome-modal-carousel" data-slide="next">&rsaquo;</a>
         </div>
-        <div class="ui-center">
-          <a href="#preview" class="js-page-nav">preview the calendar pics</a>
+        <div class="ui-welcome-modal-calendar-frame">
+          <div class="ui-welcome-modal-calendar">
+            <div class="ui-welcome-modal-calendar-bg"></div>
+            <h3 class="ui-welcome-modal-intro">WELCOME TO</h3>
+            <img class="ui-welcome-modal-heading" width="480" height="49" src="img/heading_header.png" alt="'STACHES OF SEATTLE"/>
+            <h3>A MOVEMBER FUNDRAISER</h3>
+            <div class="ui-welcome-modal-actions-container clearfix">
+              <div class="ui-welcome-modal-action">
+                <a href="http://www.facebook.com/StachesOfSeattle" target="_blank" class="ui-welcome-modal-action-label">Like us!</a>
+                <div class="ui-fb-like-container">
+                  <div class="fb-like" data-href="https://www.facebook.com/StachesOfSeattle" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+                </div>
+              </div>
+
+              <div class="ui-welcome-modal-action">
+                <a href="#support" class="ui-welcome-modal-action-label js-page-nav">Buy a calendar!</a>
+                <a href="#support" class="js-page-nav">
+                  <img class="ui-welcome-modal-buy-icon" width="32" height="32" src="img/buy_icon.png"/>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
