@@ -44,26 +44,6 @@ $(function() {
 });
 
 $(function() {
-  // Don't know why, but modals are misbehaving
-  $("body").on('show', ".modal", function(e) {
-      var modal = $(e.currentTarget);
-      setTimeout(function() {
-          modal.addClass("in");
-      }, 300);
-  });
-  $("body").on('hide', ".modal", function(e) {
-      setTimeout(function() {
-          var modal = $(e.currentTarget);
-          var data = modal.data("modal");
-          if (data && data.$backdrop) {
-              data.$backdrop.remove();
-          }
-          modal.removeClass("in");
-      }, 300);
-  });
-});
-
-$(function() {
   $("#welcome-modal").modal('show');
   var carousel = $("#welcome-modal-carousel");
 
