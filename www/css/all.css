@@ -120,7 +120,7 @@ img {
   padding-left: 480px;
   padding-right: 20px;
   height: 421px;
-  background: url('../img/header_bg.jpg?2007e7158373e40d093380f6214bed23');
+  background: url('../img/header_bg.jpg?e0846ea84261ca2949bd1ae0e7e8ab90');
 }
 
 .ui-home-header-speech-bubble {
@@ -130,7 +130,7 @@ img {
   width: 259px;
   height: 134px;
   padding: 40px 5px 0 0;
-  background: url('../img/speechbubble.png?c618b3eb5a8ee463d398d3927a1b1ad3');
+  background: url('../img/speechbubble.png?2b295384584fb0594403c6892d779f3f');
   z-index: 1;
   text-align: center;
   font-size: 24px;
@@ -185,10 +185,10 @@ img {
   width: 120px;
   height: 120px;
   line-height: 0;
-  background: url('../img/icon_calendar.png?d5e6daab54958de74f35732287a09af1');
+  background: url('../img/icon_calendar.png?79db80f1e0b5d912722f2475535b8704');
 }
 .ui-home-tab-calendar:hover {
-  background: url('../img/icon_calendar_hover.png?7435bc5c2d2bcf08131f019843d1c07a');
+  background: url('../img/icon_calendar_hover.png?584205d59539c231f6570bea07ebb32b');
 }
 
 .ui-home-tab-support {
@@ -196,10 +196,10 @@ img {
   width: 120px;
   height: 120px;
   line-height: 0;
-  background: url('../img/icon_money.png?ba46b54a463c202a6331869bd50a8c75');
+  background: url('../img/icon_money.png?05b934720fc33f5535cc861eaf9b4a80');
 }
 .ui-home-tab-support:hover {
-  background: url('../img/icon_money_hover.png?cc00b6fb574e61d721d32411552e8c8d');
+  background: url('../img/icon_money_hover.png?9680c7104fa9c3301d058b79031bc59d');
 }
 
 .ui-home-tab-learn {
@@ -207,10 +207,10 @@ img {
   width: 120px;
   height: 120px;
   line-height: 0;
-  background: url('../img/icon_learn.png?96633b0e311084ec65a30fe75fd0393f');
+  background: url('../img/icon_learn.png?9d67d904d515a994628e5f34cc2f76c1');
 }
 .ui-home-tab-learn:hover {
-  background: url('../img/icon_learn_hover.png?8d702da07b269d2366ba7fd06ade0022');
+  background: url('../img/icon_learn_hover.png?3f977598893270aa094d1e16bd65113b');
 }
 
 .ui-home-tab-info {
@@ -218,10 +218,10 @@ img {
   width: 120px;
   height: 120px;
   line-height: 0;
-  background: url('../img/icon_info.png?8b6c5809d5caa8a37180ec8603fc5969');
+  background: url('../img/icon_info.png?4e879bb655df0918d222336847641443');
 }
 .ui-home-tab-info:hover {
-  background: url('../img/icon_info_hover.png?862a6c25a49d24e989eb129410813117');
+  background: url('../img/icon_info_hover.png?8e4eebecd7dd8b27e0987ce5dc65146e');
 }
 
 .ui-home-tab-about {
@@ -229,10 +229,10 @@ img {
   width: 120px;
   height: 120px;
   line-height: 0;
-  background: url('../img/icon_about.png?a5e365e4378ddfefd6eac9b020482b44');
+  background: url('../img/icon_about.png?2be950ab45b717016c1a246042a0979e');
 }
 .ui-home-tab-about:hover {
-  background: url('../img/icon_about_hover.png?7c03bd556decb9bd6f7da91ea2b0090c');
+  background: url('../img/icon_about_hover.png?90711688f768c551361950920df0a96e');
 }
 
 .ui-home-banner-container {
@@ -414,7 +414,7 @@ img {
   right: 0;
   top: 0;
   bottom: 0;
-  background: url('../img/popup_calendar.jpg?8db49f717ad6ec1fa4482dfe87fa8e88') no-repeat top center;
+  background: url('../img/popup_calendar.jpg?efc993c923bd8c8bdcd2aab60a31e330') no-repeat top center;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
   z-index: -1;
@@ -426,6 +426,7 @@ img {
 
 .ui-welcome-modal-actions-container {
   margin-top: 10px;
+  background: white;
 }
 
 .ui-welcome-modal-action {
